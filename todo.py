@@ -30,12 +30,21 @@ def mark_done(task_number):
     else:
         print("Error: Invalid task number.")
 
+def clear_tasks():
+    tasks.clear()
+    print("All tasks cleared.")
+
 
 add_task("Finish Software Engin GitHub assignment")
 add_task("Buy groceries")
 view_tasks()
+
 mark_done(2)
 view_tasks()
+
 delete_task(1)
+view_tasks()
+
+clear_tasks()
 view_tasks()
 
